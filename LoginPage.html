@@ -1,0 +1,104 @@
+<html>
+<head>
+<center>
+<title>Hospital Management</title>
+
+<body>
+<br>
+<img style="position:center; top:100px; left:170px; width:135px; height:60px" src="upm.png"/>
+
+<h1> HOSPITAL PENGAJAR UPM (HPUPM SERDANG) </h1>
+
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  background-image: url("hpupm.png");
+  
+  background-color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+table, th, td {
+   padding: 30px;
+   
+   border-collapse: collapse;
+   border-radius: 10px;
+}
+p, p1 {
+  font-family: calibri;
+  font-size: 20px;
+}
+p2{
+  font-family: calibri;
+  font-size: 10px;
+  color: red;
+  align="left";
+}
+</style>
+
+<style type="text/css">
+table {background-color: white;}
+h1{color: white;}
+h1{background-color: black;}
+h1{font-size: 45px;}
+h1{font-family: calibri;}
+</style> 
+
+
+<table style= "height:15%; width:28%" >
+<tr>
+<th>
+
+<script type="text/javascript">
+
+function validateForm(){
+ if (document.myHosp.staffID.value == null || document.myHosp.staffID.value =="") {
+ alert("Please key-in your ID number");
+ return false;
+}
+
+ if (document.myHosp.pword.value == null || document.myHosp.pword.value =="") {
+ alert("Please key-in your password");
+ return false;
+ }
+
+}
+
+
+function resetForm(){
+    document.getElementById("myHosp").reset();
+}
+
+function goBack(){
+    window.history.back();
+}
+
+</script>
+
+
+<body>
+<form name="myHosp"  id ="myHosp" onSubmit="return validateForm()"  method ="post">
+<p align="center">
+ Staff ID   &emsp;&emsp;:   </> <input type="text" name="staffID"  style="font-size:18px" size="10">
+<br>
+<br>
+Password&emsp;:  </> <input type="text" name="pword1"  style="font-size:18px" maxlength="10" size="10">
+<br>
+<br>
+
+<p2> Enter your password. (max 8 characters only)</p2>
+<br>
+</form>
+</body>
+  
+<body>
+<p align="center">
+<input type="submit"  onclick="resetForm()" value="Reset"  style="background-color :darkRed; color: white; font-family: calibri; font-size: 18px; border: none; border-radius: 5px"/> 
+<input type="submit" name ="submit" form= "myHosp"  value="Log in" style=" background-color : black; color: white; font-family: calibri; font-size: 18px; border: none; border-radius: 5px" /> 
+
+</p>
+</body>
+</body>
+</html>
